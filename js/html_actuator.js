@@ -62,18 +62,23 @@ HTMLActuator.prototype.addTile = function (tile) {
   this.applyClasses(wrapper, classes);
 
   var outputtext = new Array();
-  outputtext[0] = "";
-  outputtext[1] = "electron";
-  outputtext[2] = "electron neutrino";
-  outputtext[3] = "muon";
-  outputtext[4] = "muon neutrino";
-  outputtext[5] = "tau";
-  outputtext[6] = "tau neutrino";
-  outputtext[7] = "gluon";
-  outputtext[8] = "photon";
-  outputtext[9] = "Z boson";
-  outputtext[10] = "W boson";
-  outputtext[11] = "Higgs Boson";
+  outputtext[1] = "JavaScript";
+  outputtext[2] = "Visual Basic";
+  outputtext[3] = "Perl";
+  outputtext[4] = "C#";
+  outputtext[5] = "Python";
+  outputtext[6] = "Java";
+  outputtext[7] = "Ruby";
+  outputtext[8] = "C++";
+  outputtext[9] = "C";
+  outputtext[10] = "Fortran";
+  outputtext[11] = "Assembly";
+  outputtext[12] = "LOLCODE";
+  outputtext[13] = "Whitespace";
+  outputtext[14] = "Befunge";
+  outputtext[15] = "Brain****";
+  outputtext[16] = "Machine Code";
+  outputtext[17] = "Malbolge";
 
 
   inner.classList.add("tile-inner");
@@ -141,7 +146,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You'll get a Nobel Prize!" : "Er... LHC breaks down......";
+  var message = won ? "Congratulations! You learned assembly!" : "Your computer crashed...";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
