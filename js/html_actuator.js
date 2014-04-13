@@ -129,7 +129,7 @@ HTMLActuator.prototype.updateScore = function (score) {
   var difference = score - this.score;
   this.score = score;
 
-  this.scoreContainer.textContent = this.score + " GeV";
+  this.scoreContainer.textContent = this.score + " Bytes";
 
   if (difference > 0) {
     var addition = document.createElement("div");
