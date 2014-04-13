@@ -141,7 +141,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 };
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
-  this.bestContainer.textContent = bestScore + " GeV";
+  this.bestContainer.textContent = bestScore + " Bytes";
 };
 
 HTMLActuator.prototype.message = function (won) {
